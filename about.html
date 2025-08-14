@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Westphal Audio Works</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet" href="style.css">
+  <style>
+    body { margin: 0; font-family: Georgia, sans-serif; background: #66615E; color: #fff; }
+    header { position: sticky; top: 0; background: #383432b3; backdrop-filter: blur(5px); padding: 3rem; display: flex; justify-content: space-between; align-items: center; z-index: 1000; }
+    header div { font-size: 1.8rem; font-weight: bold; }
+    nav a { color: white; font-size: 1.8rem; margin-left: 3rem; text-decoration: none; }
+    nav a[href="about.html"] { color: #EBDFA3; font-weight: bold; }
+    nav a:hover { color: #F0ECD3; font-weight: bold; }
+    .hero { width: 100%; text-align: center; padding: 4rem 1rem; box-sizing: border-box;}
+    .hero h1 { font-size: 3rem; margin: 0 auto; max-width: 1000px;}
+    .body-text {font-family: 'Barlow', sans-serif; color: #EBE1D9; }
+    .about-container { text-align: left; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; max-width: 1000px; margin: 3rem auto; padding: 0 1.5rem; }
+    .about-container div { line-height: 1.6; }
+    .about-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; }
+    .about-gallery img { width: 100%; border-radius: 8px; }
+    footer { text-align: center; padding: 2rem 1rem; font-size: 0.9rem; color: #aaa; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>Westphal Audio Works</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="music.html">Music</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>About Westphal Audio Works</h1>
+  <section class="about-container">
+    <div>
+      <p class="body-text">Westphal Audio Works is a solo lofi musician who also offers professional sound engineering services. With a passion for creating unique and captivating sounds, Westphal Audio Works is dedicated to delivering top-notch musical experiences for both independent artists and bands. </p>
+    </div>
+    <div>
+      <p class="body-text">Currently one of the guitarists for Sober Cafe. Stay updated with the latest releases and behind-the-scenes insights from Westphal Audio Works. Connect with us to explore collaboration opportunities and gain valuable insights into the world of music production and sound engineering. </p>
+    </div>
+  </section>
+
+  <section class="about-gallery">
+    <img src="img/gallery1.jpg" alt="Gallery image 1">
+    <img src="img/gallery2.jpg" alt="Gallery image 2">
+    <img src="img/gallery3.jpg" alt="Gallery image 3">
+    <img src="img/gallery4.jpg" alt="Gallery image 4">
+    <img src="img/gallery5.jpg" alt="Gallery image 5">
+    <img src="img/gallery6.jpg" alt="Gallery image 6">
+    <img src="img/gallery7.jpg" alt="Gallery image 7">
+    <img src="img/gallery8.jpg" alt="Gallery image 8">
+    <img src="img/gallery9.jpg" alt="Gallery image 9">
+    <img src="img/gallery10.jpg" alt="Gallery image 10">
+    <img src="img/gallery11.jpg" alt="Gallery image 11">
+    <img src="img/gallery12.jpg" alt="Gallery image 12">
+    <img src="img/gallery13.jpg" alt="Gallery image 13">
+    <img src="img/gallery14.jpg" alt="Gallery image 14">
+    <img src="img/gallery15.jpg" alt="Gallery image 15">
+    <img src="img/gallery16.jpg" alt="Gallery image 16">
+    <img src="img/gallery17.jpg" alt="Gallery image 17">
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Westphal Audio Works</p>
+    <p><a href="index.html" style="color:#7dd3fc;text-decoration:none;">Back to Home</a></p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
