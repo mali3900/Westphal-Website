@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, sans-serif;
+  background: #66615E;
+  color: #fff;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap');

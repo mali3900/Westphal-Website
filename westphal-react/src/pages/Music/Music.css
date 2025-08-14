@@ -1,0 +1,99 @@
+.music-page {
+  min-height: 100vh;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  padding: 4rem 1rem;
+  box-sizing: border-box;
+}
+
+.title h1 {
+  font-size: 3rem;
+  color: #EBDFA3;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.music-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem 4rem;
+}
+
+.music-description {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.music-description h2 {
+  color: #EBDFA3;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.music-description p {
+  color: #EBE1D9;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.music-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.music-section {
+  background: #383432;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.music-section h3 {
+  color: #EBDFA3;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.music-section p {
+  color: #EBE1D9;
+  line-height: 1.6;
+}
+
+.music-cta {
+  text-align: center;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #EBDFA3;
+  color: #383432;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background: #F0ECD3;
+}
+
+@media (max-width: 768px) {
+  .title h1 {
+    font-size: 2rem;
+  }
+  
+  .music-description h2 {
+    font-size: 1.5rem;
+  }
+  
+  .music-sections {
+    grid-template-columns: 1fr;
+  }
+}
