@@ -64,11 +64,19 @@
     <div class="grid-item short"><img src="img/gallery12.jpg" alt="Gallery image 3"></div>
     <div class="grid-item"><img src="img/gallery10.jpg" alt="Gallery image 4"></div>
     <div class="grid-item"><img src="img/gallery14.jpg" alt="Gallery image 5"></div>
-    <div class="grid-item tall wide"><img src="img/gallery7.jpg" alt="Gallery image 6"></div>
-    <div class="grid-item stacked">
-      <div><img src="img/gallery6.jpg" alt="Gallery image 7"></div>
-      <div><img src="img/gallery11.jpg" alt="Gallery image 8"></div>
+  <div class="gallery-row" style="display: flex; gap: 1rem; width: 100%; margin-bottom: 1rem;">
+    <div style="flex: 1;">
+      <img src="img/gallery7.jpg" alt="Gallery image 6" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
     </div>
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 1rem; height: 600px;">
+      <div style="flex: 1; height: 50%;">
+        <img src="img/gallery6.jpg" alt="Gallery image 7" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+      </div>
+      <div style="flex: 1; height: 50%;">
+        <img src="img/gallery11.jpg" alt="Gallery image 8" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+      </div>
+    </div>
+  </div>
     <div class="grid-item"><img src="img/gallery5.jpg" alt="Gallery image 9"></div>
     <div class="grid-item"><img src="img/gallery4.jpg" alt="Gallery image 10"></div>
     <div class="grid-item"><img src="img/gallery3.jpg" alt="Gallery image 11"></div>
