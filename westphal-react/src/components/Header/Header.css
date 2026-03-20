@@ -1,0 +1,144 @@
+.header {
+  position: sticky;
+  top: 0;
+  background: #383432b3;
+  backdrop-filter: blur(5px);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  flex-wrap: nowrap;
+}
+
+.header-brand  {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+}
+
+.header-nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.header-nav a {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: #F0ECD3;
+  font-weight: bold;
+}
+
+.header-nav a.active {
+  color: #EBDFA3;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  width: 2rem;
+  height: 1.8rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1100;
+  position: relative;
+}
+
+.hamburger .bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 3px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+  transform-origin: center center;
+  transition: transform 0.28s ease, top 0.28s ease, opacity 0.2s ease;
+}
+
+.hamburger .bar:nth-child(1) {
+  top: calc(50% - 10px);
+}
+
+.hamburger .bar:nth-child(2) {
+  top: 50%;
+ 
+}
+
+.hamburger .bar:nth-child(3) {
+  top: calc(50% + 10px);
+}
+
+.hamburger.active .bar:nth-child(1),
+.hamburger.active .bar:nth-child(3) {
+  top: 50%;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: rotate(60deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: rotate(-60deg);
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 1rem;
+    }
+
+  .header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header-brand  {
+    text-decoration: none;
+    font-size: 0.735rem;
+    font-weight: bold;
+    color: white;
+  
+  }
+
+  .header-nav {
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    gap: 0.75rem;
+    padding: 0.75rem 0;
+    justify-content: center;
+  }
+
+  .header-nav a {
+    font-size: 1.2rem;
+  }
+
+  .header.menu-open {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .header.menu-open .header-nav.open{
+    display:flex;
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: space-between;
+  }
+}
