@@ -31,6 +31,18 @@ const Music: React.FC = () => {
           <div className="music-section">
             <h3>Sober Cafe</h3>
             <p>Collaborative works with the band Sober Cafe, featuring guitar arrangements and sound design.</p>
+            <iframe
+              data-testid="embed-iframe"
+              style={{ borderRadius: "12px" }}
+              src="https://open.spotify.com/embed/track/3JEWyyUEtdfm3q0m5j3PTC?utm_source=generator&theme=0"
+              width="100%"
+              height="152"
+              frameBorder="0"
+              allowFullScreen
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Sober Cafe Spotify Player"
+            />
           </div>
 
           <div className="music-section">
